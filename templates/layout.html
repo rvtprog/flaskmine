@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+  <head>
+    <title>Mana Lapa</title>
+    <link rel='stylesheet' href="{{ url_for ('static', filename='css/main.css') }}" />
+  </head>
+  <body>
+    <header>
+      <div class='container'>
+        <nav> 
+          <ul class='menu'>
+            <li><a href="/home">home</a></li>
+            <li><a href="/about">about</a></li>
+            <li><a href="/contact">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      {% block saturs %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
